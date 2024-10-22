@@ -1,12 +1,12 @@
 ---
 layout: pages/_index.njk
 permalink: /
-metaTitle: Administradores de fincas en Barcelona - Magna Urbis
-metaDescription: Magna Urbis, expertos en administración de fincas y gestión de patrimonios en Barcelona con más de 100 años de experiencia.
-metaKeywords: administración de fincas, gestión de patrimonios, Barcelona, inmobiliaria, alquiler de viviendas
+metaTitle: Clases de salsa en Hospitalet - Salsa Viva
+metaDescription: Salsa Viva, expertos en clases de salsa y baile en Hospitalet con más de 10 años de experiencia.
+metaKeywords: clases de salsa, baile, Hospitalet, academia de baile, salsa cubana
 metaRobots: index, follow
-hero_description: kkBIENVENIDOS A MAGNA URBIS
-hero_title: kkADMINISTRADORES ^ DE FINCAS ^ EN BARCELONA
+hero_description: kkBIENVENIDOS A SALSA VIVA
+hero_title: CLASES ^ DE SALSA ^ EN HOSPITALET
 hero_btn: kkCONTACTA CON NOSOTROS
 
 

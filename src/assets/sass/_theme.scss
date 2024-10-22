@@ -1,11 +1,11 @@
 .btn-primary {
   color: $c-white;
-  background-color: #179CAA;
-  border: 1px solid #179CAA;
+  background-color:  var(--c-secondary);
+  border: 1px solid  var(--c-secondary);
 }
 
 .c-accent{
-color: #179CAA;
+color:  var(--c-secondary);
 
 }
 b {
@@ -18,7 +18,7 @@ b {
   color: $c-secondary;
 }
 .bold {
-  background-color: #179CAA;
+  background-color:  var(--c-secondary);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -144,7 +144,7 @@ width: 50%;
 
 .swiper-slide{
 
-  background-image: linear-gradient(to bottom, #179CAA, #179CAA);
+  background-image: linear-gradient(to bottom,  var(--c-secondary),  var(--c-secondary));
 
 }
 .slide-link{
