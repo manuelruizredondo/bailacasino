@@ -109,6 +109,7 @@ svg{
 .watermark{
   position: absolute;
   width: 50%;
+  opacity: 0.1;
   @media (min-width: $break-md) {
 width: 50%;
   }
