@@ -11906,8 +11906,6 @@ svg {
   width: calc(100% - 32px);
   margin: 16px;
   background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(8px);
-  /* Note: backdrop-filter has minimal browser support */
   border-radius: 16px;
   z-index: 100;
 }
