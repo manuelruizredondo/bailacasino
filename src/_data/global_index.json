@@ -30,8 +30,8 @@
   "authorweb": "design-systems.es",
   "imageDir": "/assets/static/images/",
   "contact_img": "/assets/static/images/contact.jpg",
-  "home_image": "/assets/static/images/salsa_home.webp",
-  "home_video": "https://res.cloudinary.com/manuel-ruiz/video/upload/f_auto:video,q_auto/hospitalet_salsa_intro",
+  "home_image": "/assets/static/images/fotofondo.jpg",
+  "home_video": "",
   "seo_title": "Hospitalet Salsa - Escuela de Salsa en Barcelona",
   "seo_description": "Aprende salsa en Hospitalet con los mejores profesores. Clases para todos los niveles.",
   "tag_manager": "",
@@ -56,7 +56,7 @@
       "service_img": "servicio_salsa_1"
     },
     {
-      "service_name": "Salsa intermedia",
+      "service_name": "Bachata para principiantes",
       "service_content": "Mejora tu técnica y lleva tus habilidades al siguiente nivel con clases diseñadas para bailarines intermedios.",
       "service_img": "servicio_salsa_2"
     },
