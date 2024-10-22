@@ -11836,6 +11836,15 @@ svg {
   }
 }
 
+.logo-lateral {
+  width: 200px;
+}
+@media (min-width: 992px) {
+  .logo-lateral {
+    width: 400px;
+  }
+}
+
 .logo-simple {
   width: 138px;
   margin-top: 8px;
@@ -14166,6 +14175,15 @@ svg {
 @media (min-width: 992px) {
   .btn.btn--big {
     font-size: 14px;
+  }
+}
+
+.logo-lateral {
+  width: 200px;
+}
+@media (min-width: 992px) {
+  .logo-lateral {
+    width: 400px;
   }
 }
 

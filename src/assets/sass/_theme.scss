@@ -90,7 +90,11 @@ svg{
   }
 }
 
-.logo-centrado{
+.logo-lateral{
+  width: 200px;
+  @media (min-width: $break-md) {
+    width: 400px;
+  }
 
 }
 
