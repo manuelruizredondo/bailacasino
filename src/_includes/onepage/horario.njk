@@ -1,0 +1,155 @@
+<!-- horario.njk -->
+<section class="horario-section ptr-120 pbr-120" data-scroll-section>
+  <div class="container-global-3 mx-auto">
+
+    <div class="row mb-64 text-center">
+      <div class="col-xs-12">
+        <h5 class="h5 c-accent mb-16">Todos los miércoles y viernes</h5>
+        <h2 class="h2 ttu">Horario de clases</h2>
+      </div>
+    </div>
+
+    <div class="horario-wrap">
+
+      <!-- DÍAS -->
+      <div class="horario-dias">
+        <div class="horario-dia-tag">
+          <span class="horario-dia-label">MIÉ</span>
+          <span class="horario-dia-sub">Miércoles</span>
+        </div>
+        <div class="horario-dia-tag">
+          <span class="horario-dia-label">VIE</span>
+          <span class="horario-dia-sub">Viernes</span>
+        </div>
+      </div>
+
+      <!-- TABLA DE HORARIOS -->
+      <div class="horario-table" role="table" aria-label="Horario de clases de salsa y bachata">
+
+        <!-- CABECERA -->
+        <div class="horario-thead" role="row">
+          <div class="horario-cell horario-cell--time" role="columnheader"></div>
+          <div class="horario-cell horario-cell--head salsa" role="columnheader">
+            <span class="horario-sala-label">SALA 1</span>
+            <span class="horario-sala-baile">SALSA</span>
+            <span class="horario-sala-profe">con Alex Soto</span>
+          </div>
+          <div class="horario-cell horario-cell--head bachata" role="columnheader">
+            <span class="horario-sala-label">SALA 2</span>
+            <span class="horario-sala-baile">BACHATA</span>
+            <span class="horario-sala-profe">con David Castro</span>
+          </div>
+        </div>
+
+        <!-- FILA 18:00 -->
+        <div class="horario-row" role="row">
+          <div class="horario-cell horario-cell--time" role="rowheader">
+            <span class="horario-hour">18<sup>:00</sup></span>
+          </div>
+          <div class="horario-cell horario-cell--empty" role="cell">
+            <span class="horario-empty-line"></span>
+          </div>
+          <div class="horario-cell horario-cell--clase bachata" role="cell">
+            <div class="horario-clase-inner">
+              <span class="horario-clase-nivel">Inicio 0</span>
+              <span class="horario-clase-nombre">Bachata</span>
+              <span class="horario-clase-hora">18:00 — 19:00 h</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- FILA 19:00 -->
+        <div class="horario-row" role="row">
+          <div class="horario-cell horario-cell--time" role="rowheader">
+            <span class="horario-hour">19<sup>:00</sup></span>
+          </div>
+          <div class="horario-cell horario-cell--clase salsa" role="cell">
+            <div class="horario-clase-inner">
+              <span class="horario-clase-nivel">Inicio 1</span>
+              <span class="horario-clase-nombre">Salsa</span>
+              <span class="horario-clase-hora">19:00 — 20:00 h</span>
+            </div>
+          </div>
+          <div class="horario-cell horario-cell--clase bachata" role="cell">
+            <div class="horario-clase-inner">
+              <span class="horario-clase-nivel">Intermedio 2</span>
+              <span class="horario-clase-nombre">Bachata</span>
+              <span class="horario-clase-hora">19:00 — 20:00 h</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- FILA 20:00 -->
+        <div class="horario-row" role="row">
+          <div class="horario-cell horario-cell--time" role="rowheader">
+            <span class="horario-hour">20<sup>:00</sup></span>
+          </div>
+          <div class="horario-cell horario-cell--clase salsa" role="cell">
+            <div class="horario-clase-inner">
+              <span class="horario-clase-nivel">Intermedio 3</span>
+              <span class="horario-clase-nombre">Salsa</span>
+              <span class="horario-clase-hora">20:00 — 21:00 h</span>
+            </div>
+          </div>
+          <div class="horario-cell horario-cell--clase bachata" role="cell">
+            <div class="horario-clase-inner">
+              <span class="horario-clase-nivel">Inicio 3</span>
+              <span class="horario-clase-nombre">Bachata</span>
+              <span class="horario-clase-hora">20:00 — 21:00 h</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- FILA 21:00 -->
+        <div class="horario-row" role="row">
+          <div class="horario-cell horario-cell--time" role="rowheader">
+            <span class="horario-hour">21<sup>:00</sup></span>
+          </div>
+          <div class="horario-cell horario-cell--clase salsa" role="cell">
+            <div class="horario-clase-inner">
+              <span class="horario-clase-nivel">Inicio 2</span>
+              <span class="horario-clase-nombre">Salsa</span>
+              <span class="horario-clase-hora">21:00 — 22:00 h</span>
+            </div>
+          </div>
+          <div class="horario-cell horario-cell--empty" role="cell">
+            <span class="horario-empty-line"></span>
+          </div>
+        </div>
+
+      </div>
+      <!-- fin horario-table -->
+
+      <!-- PIE DEL HORARIO -->
+      <div class="horario-footer">
+        <div class="horario-badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2"/>
+            <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          No hace falta pareja
+        </div>
+        <div class="horario-badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Matrícula gratuita
+        </div>
+        <div class="horario-badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17 21V19C17 16.7909 15.2091 15 13 15H5C2.79086 15 1 16.7909 1 19V21M23 21V19C22.9986 17.1771 21.765 15.5857 20 15.13M16 3.13C17.7699 3.58317 19.0078 5.17799 19.0078 7.005C19.0078 8.83201 17.7699 10.4268 16 10.88M13 7C13 9.20914 11.2091 11 9 11C6.79086 11 5 9.20914 5 7C5 4.79086 6.79086 3 9 3C11.2091 3 13 4.79086 13 7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Inscripciones abiertas
+        </div>
+        <div class="horario-badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.6569 16.6569C16.7202 17.5935 14.7616 19.5521 13.4142 20.8995C12.6332 21.6805 11.3668 21.6805 10.5858 20.8995L7.34315 17.6569C5.22411 15.5378 5.22411 12.1421 7.34315 10.0231L10.5858 6.78045C11.3668 5.99945 12.6332 5.99945 13.4142 6.78045L16.6569 10.0231C18.7759 12.1421 18.7759 15.5378 17.6569 16.6569Z" stroke="currentColor" stroke-width="2"/>
+            <path d="M12 13V8M12 17.01L12 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          3 ubicaciones en el área
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

@@ -113,44 +113,45 @@
   <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "RealEstateAgent",
-        "name": "Magna Urbis",
-        "url": "https://magnaurbis.com",
-        "logo": "https://magnaurbis.com/assets/static/favicons/favicon-96x96.png",
-        "description": "Magna Urbis, expertos en administración de fincas y gestión de patrimonios en Barcelona.",
+        "@type": "DanceSchool",
+        "name": "Hospitalet Baila Casino",
+        "url": "{{ global_index.url }}",
+        "logo": "{{ global_index.url }}/assets/static/images/logohospi.png",
+        "description": "Escuela de salsa y bachata en L'Hospitalet de Llobregat. Clases todos los miércoles y viernes en el Casino del Centre. Matrícula gratuita, sin pareja necesaria.",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Avda. Diagonal, 416, 1-1",
-          "addressLocality": "Barcelona",
-          "postalCode": "08037",
+          "streetAddress": "C/ D'Enric Prat de la Riba, 337",
+          "addressLocality": "L'Hospitalet de Llobregat",
+          "postalCode": "08901",
           "addressCountry": "ES"
         },
-        "telephone": "+34 93 619 12 16",
-        "email": "info@magnaurbis.com",
-        "serviceOffered": [
-          {
-            "@type": "Service",
-            "serviceType": "Administración de Fincas",
-            "description": "Administramos inmuebles residenciales y Comunidades de Propietarios.",
-            "offers": {
+        "telephone": "+34672169627",
+        "email": "{{ global_index.email }}",
+        "sameAs": [
+          "https://www.instagram.com/hospitalet_baila_casino"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Clases de baile",
+          "itemListElement": [
+            {
               "@type": "Offer",
-              "url": "https://magnaurbis.com/servicios/administracion-de-fincas",
-              "priceCurrency": "EUR",
-              "price": "Consultar"
-            }
-          },
-          {
-            "@type": "Service",
-            "serviceType": "Gestión de Patrimonios Inmobiliarios",
-            "description": "Adaptamos la gestión de tus bienes a tus necesidades, optimizando seguridad y rentabilidad.",
-            "offers": {
+              "itemOffered": {
+                "@type": "Course",
+                "name": "Clases de Salsa — Todos los niveles",
+                "description": "Clases de salsa cubana para principiantes e intermedios. Miércoles y viernes en el Casino del Centre de L'Hospitalet."
+              }
+            },
+            {
               "@type": "Offer",
-              "url": "https://magnaurbis.com/servicios/gestion-de-patrimonios",
-              "priceCurrency": "EUR",
-              "price": "Consultar"
+              "itemOffered": {
+                "@type": "Course",
+                "name": "Clases de Bachata — Todos los niveles",
+                "description": "Clases de bachata para principiantes e intermedios. Miércoles y viernes en el Casino del Centre de L'Hospitalet."
+              }
             }
-          }
-        ]
+          ]
+        }
       }
       </script>
 </head>

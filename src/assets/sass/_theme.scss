@@ -217,3 +217,263 @@ span {
 
   text-transform: initial !important;
 }
+
+/* =============================================
+   HORARIO SEMANAL
+   ============================================= */
+
+.horario-section {
+  color: #1D1E23;
+}
+
+.horario-wrap {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+/* Etiquetas de días */
+.horario-dias {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 32px;
+  justify-content: center;
+}
+
+.horario-dia-tag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--c-secondary);
+  color: #fff;
+  border-radius: 12px;
+  padding: 10px 24px;
+  min-width: 90px;
+}
+
+.horario-dia-label {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 2px;
+}
+
+.horario-dia-sub {
+  font-size: 10px;
+  opacity: 0.85;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 2px;
+}
+
+/* Tabla */
+.horario-table {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+.horario-thead,
+.horario-row {
+  display: grid;
+  grid-template-columns: 72px 1fr 1fr;
+
+  @media (min-width: $break-md) {
+    grid-template-columns: 96px 1fr 1fr;
+  }
+}
+
+.horario-thead {
+  background: rgba(0,0,0,0.04);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.horario-row {
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+/* Celda base */
+.horario-cell {
+  padding: 18px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: $break-md) {
+    padding: 22px 20px;
+  }
+
+  &--time {
+    justify-content: center;
+    border-right: 1px solid rgba(0,0,0,0.08);
+  }
+
+  &--head {
+    flex-direction: column;
+    text-align: center;
+    gap: 2px;
+    border-right: 1px solid rgba(0,0,0,0.08);
+
+    &:last-child {
+      border-right: none;
+    }
+
+    &.salsa {
+      background: rgba(255, 119, 0, 0.08);
+    }
+
+    &.bachata {
+      background: rgba(180, 60, 255, 0.08);
+    }
+  }
+
+  &--clase {
+    border-right: 1px solid rgba(0,0,0,0.06);
+
+    &:last-child {
+      border-right: none;
+    }
+
+    &.salsa {
+      background: rgba(255, 119, 0, 0.08);
+
+      .horario-clase-nombre {
+        color: var(--c-secondary);
+      }
+    }
+
+    &.bachata {
+      background: rgba(140, 40, 220, 0.07);
+
+      .horario-clase-nombre {
+        color: #8b2fe0;
+      }
+    }
+  }
+
+  &--empty {
+    border-right: 1px solid rgba(0,0,0,0.06);
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+}
+
+/* Etiquetas de sala (cabecera) */
+.horario-sala-label {
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.horario-sala-baile {
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  @media (min-width: $break-md) {
+    font-size: 20px;
+  }
+}
+
+.horario-sala-profe {
+  font-size: 10px;
+  opacity: 0.6;
+  font-style: italic;
+}
+
+/* Hora */
+.horario-hour {
+  font-size: 20px;
+  font-weight: 700;
+  opacity: 0.4;
+  line-height: 1;
+
+  sup {
+    font-size: 11px;
+    font-weight: 400;
+    opacity: 0.7;
+    vertical-align: super;
+  }
+
+  @media (min-width: $break-md) {
+    font-size: 24px;
+  }
+}
+
+/* Celda de clase */
+.horario-clase-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2px;
+  width: 100%;
+}
+
+.horario-clase-nivel {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.55;
+}
+
+.horario-clase-nombre {
+  font-size: 15px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  @media (min-width: $break-md) {
+    font-size: 18px;
+  }
+}
+
+.horario-clase-hora {
+  font-size: 11px;
+  opacity: 0.5;
+  margin-top: 2px;
+}
+
+/* Línea vacía */
+.horario-empty-line {
+  display: block;
+  width: 24px;
+  height: 1px;
+  background: rgba(0,0,0,0.12);
+  margin: auto;
+}
+
+/* Pie */
+.horario-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.horario-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  opacity: 0.6;
+  padding: 8px 16px;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 999px;
+
+  svg {
+    flex-shrink: 0;
+    fill: transparent !important;
+    stroke: currentColor;
+  }
+}
