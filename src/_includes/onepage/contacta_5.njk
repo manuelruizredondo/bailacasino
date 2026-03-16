@@ -1,104 +1,205 @@
 <!-- contacta_5.njk -->
+<section class="contacta-5-section bg-light front-section pbr-120 ptr-120" data-scroll-section>
 
-<section class="front-section pbr-64" data-scroll-section>
-    <div class="container-global-3 mx-auto">
-        <div class="row  ptr-120 pb-32 md:reverse">
-            <div class="col-xs-12 col-md-6 ">
-                <div class="text-18-r c-accent mb-16">{{global_index.contacta_5_title}} </div>
-                <div class="fluid-4-b mb-24 "> {{global_index.contacta_5_subtitle}}</div>
+  <!-- Título -->
+  <div class="container-global-3 mx-auto pb-64">
+    <div class="row">
+      <div class="col-xs-12 col-md-8">
+        <div class="text-18-r c-accent mb-16">{{global_index.contacta_5_title}}</div>
+        <div class="fluid-4-b mb-8">Tres sedes en el Baix Llobregat</div>
+        <p class="p1" style="opacity:0.6">Una matrícula gratuita, acceso a todas. Elige la que tengas más cerca.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Panel: tarjetas + mapa interactivo -->
+  <div class="container-global-3 mx-auto">
+    <div class="c5-panel" id="c5-panel">
+
+      <!-- Columna izquierda: tarjetas de sedes -->
+      <div class="c5-cards-col">
+
+        <!-- SEDE 01 — HOSPITALET -->
+        <div class="c5-card c5-card--active" data-sede="1" onclick="selectSede(1)">
+          <div class="c5-card-head">
+            <span class="c5-card-num">01</span>
+            <div>
+              <span class="c5-card-tag">Sede principal</span>
+              <h3 class="c5-card-nombre">L'Hospitalet de Llobregat</h3>
             </div>
+          </div>
+          <p class="c5-card-dir">
+            Casino del Centre<br>
+            C/ D'Enric Prat de la Riba, 337<br>
+            08901 L'Hospitalet de Llobregat
+          </p>
+          <div class="c5-card-horarios">
+            <div class="c5-hrow">
+              <span class="c5-badge c5-badge--salsa">Salsa</span>
+              <span>19:00 — 22:00 h</span>
+            </div>
+            <div class="c5-hrow">
+              <span class="c5-badge c5-badge--bachata">Bachata</span>
+              <span>18:00 — 21:00 h</span>
+            </div>
+          </div>
+          <div class="c5-card-actions">
+            <a class="c5-btn-maps"
+               href="https://maps.google.com/?q=Casino+del+Centre,+Carrer+Enric+Prat+de+la+Riba+337,+L%27Hospitalet+de+Llobregat"
+               target="_blank" rel="noopener noreferrer"
+               onclick="event.stopPropagation()">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M17 9.5C17 13.6421 12 19 12 19C12 19 7 13.6421 7 9.5C7 6.46243 9.23858 4 12 4C14.7614 4 17 6.46243 17 9.5Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="9.5" r="2" stroke="currentColor" stroke-width="1.8"/></svg>
+              Abrir en Google Maps
+            </a>
+            <a class="c5-btn-ig"
+               href="https://www.instagram.com/hospitalet_baila_casino"
+               target="_blank" rel="noopener noreferrer"
+               onclick="event.stopPropagation()">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+              @hospitalet_baila_casino
+            </a>
+          </div>
         </div>
-    </div>
-    <div class="container-fluid ">
 
-
-<div class="row">
-    <div class="col-xs-4">  </div>
-    <div class="col-xs-7">
-
-    </div>
-</div>
-
-        <div class="row ">
-            <div class="col-xs-12 mb-32 height-sm ">
-                <div class="h-100 reset-margin">
-                    <iframe
-                        src="{{global_index.contacta_map}}"
-                        style="float: left;" width="100%" height="100%" style="border:0;" allowfullscreen=""
-                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-
-      
+        <!-- SEDE 02 — SANT JOAN DESPÍ -->
+        <div class="c5-card" data-sede="2" onclick="selectSede(2)">
+          <div class="c5-card-head">
+            <span class="c5-card-num">02</span>
+            <div>
+              <span class="c5-card-tag">Sede 2</span>
+              <h3 class="c5-card-nombre">Sant Joan Despí</h3>
             </div>
+          </div>
+          <p class="c5-card-dir">
+            Sant Joan Despí<br>
+            Barcelona
+          </p>
+          <div class="c5-card-horarios">
+            <div class="c5-hrow">
+              <span class="c5-badge c5-badge--salsa">Salsa</span>
+              <span>Consultar horarios</span>
+            </div>
+            <div class="c5-hrow">
+              <span class="c5-badge c5-badge--bachata">Bachata</span>
+              <span>Consultar horarios</span>
+            </div>
+          </div>
+          <div class="c5-card-actions">
+            <a class="c5-btn-maps"
+               href="https://maps.google.com/?q=Sant+Joan+Despi,+Barcelona"
+               target="_blank" rel="noopener noreferrer"
+               onclick="event.stopPropagation()">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M17 9.5C17 13.6421 12 19 12 19C12 19 7 13.6421 7 9.5C7 6.46243 9.23858 4 12 4C14.7614 4 17 6.46243 17 9.5Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="9.5" r="2" stroke="currentColor" stroke-width="1.8"/></svg>
+              Abrir en Google Maps
+            </a>
+            <a class="c5-btn-ig"
+               href="https://www.instagram.com/despi_baila_casino"
+               target="_blank" rel="noopener noreferrer"
+               onclick="event.stopPropagation()">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+              @despi_baila_casino
+            </a>
+          </div>
         </div>
-    </div>
-    <div class="container-global-3 mx-auto  pbr-64">
-        <div class="row smmax:reverse">
 
-
-
-            <div class="col-xs-10 col-sm-6 align-middle">
-
-                <div class="wmax-300">
-                    <div class="p3 mb-24 border-b  ">
-                        <span class=" is-flex align-middle content-start pb-8 w-100">
-                            <div class="mr-16 "><svg width="18" height="23" viewBox="0 0 18 23" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M17 8.96552C17 16.2069 9 22 9 22C9 22 1 16.2069 1 8.96552C1 4.56638 4.77455 1 9 1C13.2255 1 17 4.56638 17 8.96552Z"
-                                        stroke="#A1A1A1" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path
-                                        d="M9 13.6724C11.6108 13.6724 13.7273 11.5651 13.7273 8.96552C13.7273 6.36597 11.6108 4.25862 9 4.25862C6.3892 4.25862 4.27273 6.36597 4.27273 8.96552C4.27273 11.5651 6.3892 13.6724 9 13.6724Z"
-                                        stroke="#A1A1A1" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </div>
-
-                            {{global_index.direction}}
-                        </span>
-                    </div>
-                    <div class="p3 mb-24 is-flex align-middle border-b">
-                        <a href="tel:{{global_index.telefono}}">
-                            <span class="is-flex align-middle content-start pb-8 w-100">
-                                <div class="mr-16">
-                                    <svg width="15" height="26" viewBox="0 0 15 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M1 5.13793H14M1 20.8621H14M4.82353 3.48276H10.1765M2.91176 1H12.0882C13.1441 1 14 1.92631 14 3.06897V22.931C14 24.0737 13.1441 25 12.0882 25H2.91176C1.85593 25 1 24.0737 1 22.931V3.06897C1 1.92631 1.85593 1 2.91176 1ZM8.26471 22.931C8.26471 23.3881 7.92234 23.7586 7.5 23.7586C7.07766 23.7586 6.73529 23.3881 6.73529 22.931C6.73529 22.474 7.07766 22.1034 7.5 22.1034C7.92234 22.1034 8.26471 22.474 8.26471 22.931Z"
-                                            stroke="#A1A1A1" stroke-miterlimit="10" stroke-linecap="round" />
-                                    </svg>
-                                </div>
-                                                   {{global_index.telefono}}
-                            </span>
-                        </a>
-                    </div>
-                    <div class="p3 mb-24 is-flex align-middle border-b">
-                        <a href="mailto:{{global_index.email}}">
-                            <span class=" is-flex align-middle content-start pb-8 w-100">
-                                <div class="mr-16"><svg width="24" height="23" viewBox="0 0 24 23" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M23 1L1 10.5134L9.4081 14.0755M23 1L9.4081 14.0755M23 1L19.0886 19.5077L9.4081 14.0755M9.4081 14.0755V22L12.8401 16.0011"
-                                            stroke="#A1A1A1" stroke-linejoin="round" />
-                                    </svg>
-                                </div>
-                            
-                                {{global_index.email}}
-                            </span>
-                        </a>
-                    </div>
-                </div>
-
-
+        <!-- SEDE 03 — SANT BOI -->
+        <div class="c5-card" data-sede="3" onclick="selectSede(3)">
+          <div class="c5-card-head">
+            <span class="c5-card-num">03</span>
+            <div>
+              <span class="c5-card-tag">Sede 3</span>
+              <h3 class="c5-card-nombre">Sant Boi de Llobregat</h3>
             </div>
-
-            <div class="col-xs-8 col-sm-6 mb-32 md:mb-0">
-                <div class="ar-4-3 border-20  p-relative sub-image o-hidden">
-                    <img class="parallax-box " data-scroll data-scroll-speed="-1"
-                        src="/assets/static/images/localizacion.jpg" alt="">
-                </div>
+          </div>
+          <p class="c5-card-dir">
+            Sant Boi de Llobregat<br>
+            Barcelona
+          </p>
+          <div class="c5-card-horarios">
+            <div class="c5-hrow">
+              <span class="c5-badge c5-badge--salsa">Salsa</span>
+              <span>Consultar horarios</span>
             </div>
-
-
-    
+            <div class="c5-hrow">
+              <span class="c5-badge c5-badge--bachata">Bachata</span>
+              <span>Consultar horarios</span>
+            </div>
+          </div>
+          <div class="c5-card-actions">
+            <a class="c5-btn-maps"
+               href="https://maps.google.com/?q=Sant+Boi+de+Llobregat,+Barcelona"
+               target="_blank" rel="noopener noreferrer"
+               onclick="event.stopPropagation()">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M17 9.5C17 13.6421 12 19 12 19C12 19 7 13.6421 7 9.5C7 6.46243 9.23858 4 12 4C14.7614 4 17 6.46243 17 9.5Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="9.5" r="2" stroke="currentColor" stroke-width="1.8"/></svg>
+              Abrir en Google Maps
+            </a>
+            <a class="c5-btn-ig"
+               href="https://www.instagram.com/santboi_baila_casino"
+               target="_blank" rel="noopener noreferrer"
+               onclick="event.stopPropagation()">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+              @santboi_baila_casino
+            </a>
+          </div>
         </div>
+
+      </div>
+      <!-- fin c5-cards-col -->
+
+      <!-- Columna derecha: mapa -->
+      <div class="c5-map-col">
+
+        <!-- Mapa sede 01 — Casino del Centre, Hospitalet -->
+        <div class="c5-map c5-map--active" id="c5-map-1">
+          <iframe
+            src="https://maps.google.com/maps?q=41.36210,2.11180&z=17&output=embed&hl=es"
+            width="100%" height="100%" style="border:0; display:block;"
+            allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Casino del Centre — L'Hospitalet de Llobregat"></iframe>
+        </div>
+
+        <!-- Mapa sede 02 — Sant Joan Despí -->
+        <div class="c5-map" id="c5-map-2">
+          <iframe
+            src="https://maps.google.com/maps?q=Sant+Joan+Despi,+Barcelona&z=14&output=embed&hl=es"
+            width="100%" height="100%" style="border:0; display:block;"
+            allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Sant Joan Despí"></iframe>
+        </div>
+
+        <!-- Mapa sede 03 — Sant Boi de Llobregat -->
+        <div class="c5-map" id="c5-map-3">
+          <iframe
+            src="https://maps.google.com/maps?q=Sant+Boi+de+Llobregat,+Barcelona&z=14&output=embed&hl=es"
+            width="100%" height="100%" style="border:0; display:block;"
+            allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Sant Boi de Llobregat"></iframe>
+        </div>
+
+      </div>
+      <!-- fin c5-map-col -->
+
     </div>
+    <!-- fin c5-panel -->
+  </div>
+
 </section>
+
+<script>
+function selectSede(num) {
+  // Tarjetas
+  document.querySelectorAll('.c5-card').forEach(function(card) {
+    card.classList.remove('c5-card--active');
+  });
+  document.querySelector('[data-sede="' + num + '"]').classList.add('c5-card--active');
+
+  // Mapas
+  document.querySelectorAll('.c5-map').forEach(function(map) {
+    map.classList.remove('c5-map--active');
+  });
+  document.getElementById('c5-map-' + num).classList.add('c5-map--active');
+}
+</script>
